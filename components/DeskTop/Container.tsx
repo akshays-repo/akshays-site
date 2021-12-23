@@ -29,12 +29,12 @@ export const Container: FC<ContainerProps> = ({ hideSourceOnDrag }) => {
     };
   }>({
     a: {
-      top: 0,
+      top: 20,
       left: 0,
       title: <DeskTopIcons title="About me" icon={Icons.about} onClick={() => {}} />,
     },
     b: {
-      top: 0,
+      top: 20,
       left: 100,
       title: <DeskTopIcons title="Blog" icon={Icons.blog} onClick={() => {}} />,
     },
