@@ -1,9 +1,8 @@
 import { CSSProperties, FC, useCallback, useState } from "react";
 import { useDrop, XYCoord } from "react-dnd";
-import { Box } from "./Box";
+import { Box, ItemTypes } from "./Box";
 import update from "immutability-helper";
 import { DragItem } from "./interfaces";
-import { ItemTypes } from "./itemTypes";
 import DeskTopIcons from "./DeskTopIcons";
 import { Icons } from "../../constants/icons";
 
@@ -30,13 +29,13 @@ export const Container: FC<ContainerProps> = ({ hideSourceOnDrag }) => {
     };
   }>({
     a: {
-      top: 20,
-      left: 80,
+      top: 0,
+      left: 0,
       title: <DeskTopIcons title="About me" icon={Icons.about} onClick={() => {}} />,
     },
     b: {
-      top: 180,
-      left: 20,
+      top: 0,
+      left: 100,
       title: <DeskTopIcons title="Blog" icon={Icons.blog} onClick={() => {}} />,
     },
   });

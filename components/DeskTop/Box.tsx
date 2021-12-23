@@ -1,13 +1,14 @@
 import { CSSProperties, FC, ReactNode } from 'react'
 import { useDrag } from 'react-dnd'
-import { ItemTypes } from './itemTypes'
 
 const style: CSSProperties = {
   position: 'absolute',
   padding: '0.5rem 1rem',
   cursor: 'pointer',
 }
-
+export const ItemTypes = {
+    BOX: 'box',
+  }
 export interface BoxProps {
   id: any
   left: number

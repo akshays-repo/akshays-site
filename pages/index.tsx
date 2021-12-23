@@ -2,11 +2,11 @@ import type { NextPage } from "next";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import { DeskTop } from "../components/DeskTop/DeskTop";
-import TaskBar from "../components/TaskBar";
+import TaskBar from "../components/TaskBar/TaskBar";
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-gradient-to-l from-cyan-500 to-blue-500 hover:bg-gradient-to-r h-screen">
+    <div className="bg-gradient-to-r from-purple-800 via-violet-900 to-purple-800 hover:bg-gradient-to-r h-screen">
       <DndProvider backend={HTML5Backend}>
         <div className="container mx-auto">
           <DeskTop />
