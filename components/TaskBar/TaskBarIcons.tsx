@@ -5,7 +5,7 @@ interface TaskBarIconsInterface {
 
 const TaskBarIcons = ({ icon }: TaskBarIconsInterface) => {
   return (
-    <div className="hover:ring cursor-pointer p-3">
+    <div className=" cursor-pointer p-3">
       <img src={icon} width={"30px"} height={"30px"} />
     </div>
   );

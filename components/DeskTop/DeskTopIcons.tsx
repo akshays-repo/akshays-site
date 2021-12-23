@@ -8,9 +8,9 @@ interface DeskTopIconsInterFace {
 
 const DeskTopIcons = (props: DeskTopIconsInterFace) => {
   return (
-    <div className="text-center">
-      <img src={props.icon} width={"50px"} height={"50px"} />
-      <div className="text-d text-sm font-semi text-white" >{props.title}</div>
+    <div className="flex flex-col content-center items-center text-center p-2 hover:backdrop-blur-md hover:bg-white/20 w-24">
+      <img src={props.icon} width={"40px"} height={"40px"} />
+      <div className="text-sm font-semi text-white">{props.title}</div>
     </div>
   );
 };
