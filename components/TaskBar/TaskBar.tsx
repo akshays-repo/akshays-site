@@ -19,23 +19,23 @@ const TaskBar = () => {
         <div className="flex p-3 space-x-5 place-content-center">
           <div>
             <TaskBarIcons
-              icon={Icons.about}
+              icon={Icons.windows}
               onClick={() => {
                 handleMenuClick();
               }}
             />
           </div>
           <div>
-            <TaskBarIcons icon={Icons.blog} onClick={() => {}} />
+            <TaskBarIcons icon={Icons.linkedin} onClick={() => {}} />
           </div>
           <div>
-            <TaskBarIcons icon={Icons.about} onClick={() => {}} />
+            <TaskBarIcons icon={Icons.github} onClick={() => {}} />
           </div>
           <div>
-            <TaskBarIcons icon={Icons.about} onClick={() => {}} />
+            <TaskBarIcons icon={Icons.instagram} onClick={() => {}} />
           </div>
           <div>
-            <TaskBarIcons icon={Icons.about} onClick={() => {}} />
+            <TaskBarIcons icon={Icons.settings} onClick={() => {}} />
           </div>
         </div>
 
